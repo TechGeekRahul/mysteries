@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+
+<section>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">Mysteries</a>
+      <ul>
+        <!-- <li><a href="/register">SignUp</a></li> -->
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <h2>Register</h2>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password" />
+            </div>
+            <button type="submit" class="btn btn-danger">Register</button>
+          </form>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card social-block mt-4">
+            <a
+              class="btn btn-block btn-social btn-google pr-0"
+              href="/auth/google"
+              role="button"
+            >
+              <i class="fab fa-google"></i>
+              Sign Up with Google
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgBx">
+      <img src="../assets/sideimg.png" alt="side image" />
+    </div>
+  </div>
+</section>
+
+<%- include('partials/header') %>

@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<section>
+  <div class="container">
+    <header>
+      <a href="#" class="logo">Mysteries</a>
+      <ul>
+        <li><a href="/logout">Logout</a></li>
+        <!-- <li><a href="/login">Login</a></li> -->
+      </ul>
+    </header>
+    <div class="content" style="">
+      <form action="/submit" method="POST">
+        <div class="form-group" style="margin-right: 60px">
+          <input
+            type="text"
+            class="form-control"
+            name="secret"
+            placeholder="What's your secret?"
+          />
+        </div>
+        <button type="submit" class="btn btn-danger" style="">Submit</button>
+      </form>
+    </div>
+
+    <div class="imgBx">
+      <img src="../assets/sideimg.png" alt="side image" />
+    </div>
+  </div>
+</section>
+
+<!-- 
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Secrets</h1>
+    <p class="secret-text">Don't keep your secrets, share them anonymously!</p>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?">
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+
+  </div>
+</div> -->
+<%- include('partials/footer') %>
